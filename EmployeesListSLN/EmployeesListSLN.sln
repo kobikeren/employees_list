@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeesListPL", "EmployeesListPL\EmployeesListPL.csproj", "{4561416D-0BB7-41DB-A770-D6CE3B5D5CC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeesListBLL", "EmployeesListBLL\EmployeesListBLL.csproj", "{6B033B91-992B-4265-8819-E1DAA9FC6623}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeesListDAL", "EmployeesListDAL\EmployeesListDAL.csproj", "{9FDFF337-098A-4E64-B4F0-88AE2DF15D77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4561416D-0BB7-41DB-A770-D6CE3B5D5CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4561416D-0BB7-41DB-A770-D6CE3B5D5CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4561416D-0BB7-41DB-A770-D6CE3B5D5CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4561416D-0BB7-41DB-A770-D6CE3B5D5CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B033B91-992B-4265-8819-E1DAA9FC6623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B033B91-992B-4265-8819-E1DAA9FC6623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B033B91-992B-4265-8819-E1DAA9FC6623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B033B91-992B-4265-8819-E1DAA9FC6623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FDFF337-098A-4E64-B4F0-88AE2DF15D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FDFF337-098A-4E64-B4F0-88AE2DF15D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FDFF337-098A-4E64-B4F0-88AE2DF15D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FDFF337-098A-4E64-B4F0-88AE2DF15D77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
