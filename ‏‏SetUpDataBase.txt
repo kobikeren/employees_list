@@ -1,0 +1,76 @@
+STEP 1 : execute the sql script, in Microsoft SQL Server
+STEP 2 : in App.config file, insert the connection string
+
+
+---------------------------------------------------------------------------------------------
+------------------------------------------ SQL --------------------------------------------
+---------------------------------------------------------------------------------------------
+
+create database dbEmployeesList
+go
+
+use dbEmployeesList
+go
+
+create table tblEmployees
+(
+	Id int primary key identity,
+	FirstName nvarchar(50),
+	LastName nvarchar(50),
+	Gender nvarchar(50),
+	Salary nvarchar(50)
+)
+go
+
+insert into tblEmployees values ('fn1','ln1','Male','111')
+insert into tblEmployees values ('fn2','ln2','Female','222')
+go
+
+create procedure spGetAllEmployees
+as
+begin
+	select * from tblEmployees
+end
+go
+
+create procedure spGetEmployeeById
+@Id int
+as
+begin
+	select * from tblEmployees
+	where Id = @Id
+end
+go
+
+create procedure spAddEmployee
+@FirstName nvarchar(50),
+@LastName nvarchar(50),
+@Gender nvarchar(50),
+@Salary nvarchar(50)
+as
+begin
+	insert into tblEmployees 
+	values (@FirstName, @LastName, @Gender, @Salary)
+end
+go
+
+create procedure spEditEmployee
+@Id int,
+@FirstName nvarchar(50),
+@LastName nvarchar(50),
+@Gender nvarchar(50),
+@Salary nvarchar(50)
+as
+begin
+	update tblEmployees set FirstName = @FirstName, LastName = @LastName,
+	Gender = @Gender, Salary = @Salary where Id = @Id
+end
+go
+
+create procedure spDeleteEmployee
+@Id int
+as
+begin
+	delete from tblEmployees where Id = @Id
+end
+go
